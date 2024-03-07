@@ -1,0 +1,1 @@
+Run `npm run dev` to start project or use `npm run build` to build project

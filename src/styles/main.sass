@@ -1,0 +1,61 @@
+@use "base/reset"
+
+main
+  display: flex
+  align-items: center
+  justify-content: center
+
+  form.calc
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    row-gap: 20px
+
+    padding: 15px
+    border-radius: 10px
+    box-shadow: rgb(0, 156, 174) 0 0 10px
+    width: min-content
+
+    .inputs, .result
+      display: flex
+      column-gap: 15px
+      width: 100%
+
+    .inputs
+      label
+        display: flex
+        flex-direction: column
+        row-gap: 3px
+
+        color: #ccc
+        font-size: 13px
+
+        input[type="number"]
+          width: 100px
+
+          &:hover, &:focus
+            box-shadow: rgb(0, 156, 174) 0 0 10px
+
+        select
+          width: 110px
+
+    .result
+      button[type="reset"]
+        margin-right: auto
+
+      button[type="submit"][disabled]
+        position: relative
+        cursor: not-allowed
+
+        &::before
+          content: ''
+          width: 1px
+          height: 15px
+          background-color: white
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%) rotate(-45deg)
+
+      button
+        padding: 0.25rem 0.5rem

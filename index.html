@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>12week</title>
+
+  <link rel="stylesheet" href="/src/styles/main.sass">
+</head>
+<body>
+<main>
+  <form class="calc">
+    <div class="inputs">
+      <label>
+        Значення a:
+        <input type="number" step="0.00000000000000001" name="a" aria-label="Значення a:">
+      </label>
+      <label>
+        Дія:
+        <select name="action" aria-label="Дія">
+          <option value="+" selected>Додати</option>
+          <option value="-">Відняти</option>
+          <option value="*">Помножити</option>
+          <option value="/">Поділити</option>
+        </select>
+      </label>
+      <label>
+        Значення b:
+        <input type="number" step="0.00000000000000001" name="b" aria-label="Значення b:">
+      </label>
+    </div>
+    <div class="result">
+      <button type="reset">C</button>
+      <button type="submit" disabled>=</button>
+      <input type="number" disabled id="result" aria-label="result" placeholder="result">
+    </div>
+  </form>
+</main>
+<script src="/src/main.ts"></script>
+</body>
+</html>

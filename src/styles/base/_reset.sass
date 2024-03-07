@@ -1,0 +1,35 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+  background: #131516
+  color: white
+
+main
+  flex: 1 1 auto
+
+input, select, button
+  background: #131516
+  color: white
+  border-radius: 5px
+  border: 1px solid #3e4446
+
+  padding: 0.3rem 0.5rem
+
+button
+  cursor: pointer
+
+input[type="number"]
+  -moz-appearance: textfield
+
+  outline: none
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
